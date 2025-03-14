@@ -47,10 +47,10 @@ export default function HeroSection() {
               className="flex flex-col space-y-3"
             >
               <span className="px-3 py-1 text-xs font-medium text-primary bg-primary/10 rounded-full w-fit">
-                Full Stack Developer
+                Software Developer
               </span>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold">
-                Crafting Digital <br />
+                Henry Chizoba <br />
                 <span className="text-primary">Experiences</span> That Matter
               </h1>
             </motion.div>
@@ -61,7 +61,7 @@ export default function HeroSection() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="text-lg text-muted-foreground max-w-2xl"
             >
-              I'm a passionate full-stack developer who transforms ideas into elegant, functional digital solutions. With expertise in modern web technologies, I build applications that deliver exceptional user experiences.
+              I'm a passionate software developer who transforms ideas into elegant, functional digital solutions. With expertise in modern web technologies, I build applications that deliver exceptional user experiences.
             </motion.p>
             
             <motion.div 
