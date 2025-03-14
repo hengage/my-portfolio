@@ -1,8 +1,7 @@
-
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { motion } from "framer-motion";
-import { Code, Database, Layout, Server, Smartphone, Wand2 } from "lucide-react";
+import { Code, Database, Layout, Server, Cloud } from "lucide-react";
 
 const SKILLS = [
   {
@@ -21,19 +20,9 @@ const SKILLS = [
     description: "Designing efficient database schemas and implementing data access strategies."
   },
   {
-    icon: <Layout size={24} />,
-    name: "UI/UX Design",
-    description: "Crafting intuitive user experiences and visually appealing interfaces."
-  },
-  {
-    icon: <Smartphone size={24} />,
-    name: "Mobile Development",
-    description: "Developing cross-platform mobile applications with native-like performance."
-  },
-  {
-    icon: <Wand2 size={24} />,
-    name: "DevOps",
-    description: "Automating deployment workflows and implementing CI/CD pipelines."
+    icon: <Cloud size={24} />,
+    name: "AWS",
+    description: "Leveraging AWS services like Lambda, EC2, DynamoDB, SNS, and SQS for scalable cloud solutions."
   }
 ];
 
@@ -71,7 +60,7 @@ export default function SkillsSection() {
           </motion.p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {SKILLS.map((skill, index) => (
             <motion.div 
               key={skill.name}
