@@ -1,7 +1,7 @@
 
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Github, Linkedin, Twitter } from "lucide-react";
+import { ArrowRight, Github, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function HeroSection() {
@@ -61,7 +61,7 @@ export default function HeroSection() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="text-lg text-muted-foreground max-w-2xl"
             >
-              I'm a passionate software developer who transforms ideas into elegant, functional digital solutions. With expertise in modern web technologies, I build applications that deliver exceptional user experiences.
+              I'm a passionate software developer with a keen interest in computer science who transforms ideas into elegant, functional digital solutions. With expertise in modern web technologies, I build applications that deliver exceptional user experiences.
             </motion.p>
             
             <motion.div 
@@ -94,7 +94,7 @@ export default function HeroSection() {
               <div className="h-px bg-border flex-1" />
               <div className="flex items-center gap-4">
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/hengage" 
                   target="_blank" 
                   rel="noreferrer" 
                   className="p-2 rounded-full hover:bg-accent transition-colors"
@@ -103,22 +103,13 @@ export default function HeroSection() {
                   <Github size={20} />
                 </a>
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://linkedin.com/in/henrychizoba" 
                   target="_blank" 
                   rel="noreferrer" 
                   className="p-2 rounded-full hover:bg-accent transition-colors"
                   aria-label="LinkedIn"
                 >
                   <Linkedin size={20} />
-                </a>
-                <a 
-                  href="https://twitter.com" 
-                  target="_blank" 
-                  rel="noreferrer" 
-                  className="p-2 rounded-full hover:bg-accent transition-colors"
-                  aria-label="Twitter"
-                >
-                  <Twitter size={20} />
                 </a>
               </div>
               <div className="h-px bg-border flex-1" />

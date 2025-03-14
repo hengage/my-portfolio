@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -52,7 +52,7 @@ export default function Footer() {
             <h3 className="font-medium text-base mb-4">Connect</h3>
             <div className="flex space-x-4">
               <a 
-                href="https://github.com" 
+                href="https://github.com/hengage" 
                 target="_blank" 
                 rel="noreferrer" 
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -61,22 +61,13 @@ export default function Footer() {
                 <Github size={20} />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://linkedin.com/in/henrychizoba" 
                 target="_blank" 
                 rel="noreferrer" 
                 className="text-muted-foreground hover:text-foreground transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
-              </a>
-              <a 
-                href="https://twitter.com" 
-                target="_blank" 
-                rel="noreferrer" 
-                className="text-muted-foreground hover:text-foreground transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter size={20} />
               </a>
               <a 
                 href="mailto:hello@example.com" 
