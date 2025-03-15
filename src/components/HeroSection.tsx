@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Github, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Button } from "./ui/button";
 
 export default function HeroSection() {
   const backgroundRef = useRef<HTMLDivElement>(null);
@@ -70,19 +71,23 @@ export default function HeroSection() {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Link 
-                to="/projects" 
-                className="flex items-center justify-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors group"
-              >
-                View my work
-                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </Link>
-              <Link 
-                to="/contact" 
-                className="flex items-center justify-center px-6 py-3 border border-border rounded-lg hover:bg-accent transition-colors"
-              >
-                Contact me
-              </Link>
+              <Button asChild>
+                <Link 
+                  to="/projects" 
+                  className="flex items-center group"
+                >
+                  View my work
+                  <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link 
+                  to="/contact" 
+                  className="flex items-center"
+                >
+                  Contact me
+                </Link>
+              </Button>
             </motion.div>
             
             <motion.div 
@@ -93,24 +98,36 @@ export default function HeroSection() {
             >
               <div className="h-px bg-border flex-1" />
               <div className="flex items-center gap-4">
-                <a 
-                  href="https://github.com/hengage" 
-                  target="_blank" 
-                  rel="noreferrer" 
-                  className="p-2 rounded-full hover:bg-accent transition-colors"
+                <Button 
+                  variant="ghost"
+                  size="icon"
+                  asChild
+                  className="rounded-full"
                   aria-label="GitHub"
                 >
-                  <Github size={20} />
-                </a>
-                <a 
-                  href="https://linkedin.com/in/henrychizoba" 
-                  target="_blank" 
-                  rel="noreferrer" 
-                  className="p-2 rounded-full hover:bg-accent transition-colors"
+                  <a 
+                    href="https://github.com/hengage" 
+                    target="_blank" 
+                    rel="noreferrer"
+                  >
+                    <Github size={20} />
+                  </a>
+                </Button>
+                <Button 
+                  variant="ghost"
+                  size="icon"
+                  asChild
+                  className="rounded-full"
                   aria-label="LinkedIn"
                 >
-                  <Linkedin size={20} />
-                </a>
+                  <a 
+                    href="https://linkedin.com/in/henrychizoba" 
+                    target="_blank" 
+                    rel="noreferrer"
+                  >
+                    <Linkedin size={20} />
+                  </a>
+                </Button>
               </div>
               <div className="h-px bg-border flex-1" />
             </motion.div>
