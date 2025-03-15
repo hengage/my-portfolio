@@ -5,7 +5,6 @@ import PageTransition from "@/components/PageTransition";
 import { motion } from "framer-motion";
 import { ContactInfo } from "@/components/contact/ContactInfo";
 import { ContactForm } from "@/components/contact/ContactForm";
-import { LocationMap } from "@/components/contact/LocationMap";
 
 const Contact = () => {
   return (
@@ -52,8 +51,6 @@ const Contact = () => {
                 <ContactForm />
               </motion.div>
             </div>
-            
-            <LocationMap className="mt-16" />
           </section>
         </main>
       </PageTransition>

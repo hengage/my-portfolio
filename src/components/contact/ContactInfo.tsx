@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
 interface ContactInfoProps {
   className?: string;
@@ -18,10 +18,10 @@ export function ContactInfo({ className }: ContactInfoProps) {
           <div>
             <h3 className="font-medium mb-1">Email</h3>
             <a 
-              href="mailto:hello@example.com" 
+              href="mailto:henrychizobaudeh@gmail.com" 
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
-              hello@example.com
+              henrychizobaudeh@gmail.com
             </a>
           </div>
         </div>
@@ -33,10 +33,10 @@ export function ContactInfo({ className }: ContactInfoProps) {
           <div>
             <h3 className="font-medium mb-1">Phone</h3>
             <a 
-              href="tel:+1234567890" 
+              href="tel:+2347045538512" 
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
-              +1 (234) 567-890
+              +234 704 553 8512
             </a>
           </div>
         </div>
@@ -48,7 +48,7 @@ export function ContactInfo({ className }: ContactInfoProps) {
           <div>
             <h3 className="font-medium mb-1">Location</h3>
             <p className="text-muted-foreground">
-              San Francisco, California
+              Lagos, Nigeria
             </p>
           </div>
         </div>
@@ -57,7 +57,7 @@ export function ContactInfo({ className }: ContactInfoProps) {
       <h3 className="font-medium mb-4">Connect with me</h3>
       <div className="flex items-center gap-4">
         <a 
-          href="https://github.com" 
+          href="https://github.com/hengage" 
           target="_blank" 
           rel="noreferrer" 
           className="p-3 border border-border rounded-lg hover:bg-accent transition-colors"
@@ -66,22 +66,13 @@ export function ContactInfo({ className }: ContactInfoProps) {
           <Github size={20} />
         </a>
         <a 
-          href="https://linkedin.com" 
+          href="https://linkedin.com/in/henrychizoba" 
           target="_blank" 
           rel="noreferrer" 
           className="p-3 border border-border rounded-lg hover:bg-accent transition-colors"
           aria-label="LinkedIn"
         >
           <Linkedin size={20} />
-        </a>
-        <a 
-          href="https://twitter.com" 
-          target="_blank" 
-          rel="noreferrer" 
-          className="p-3 border border-border rounded-lg hover:bg-accent transition-colors"
-          aria-label="Twitter"
-        >
-          <Twitter size={20} />
         </a>
       </div>
     </div>
