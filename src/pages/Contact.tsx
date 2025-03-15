@@ -30,6 +30,14 @@ const Contact = () => {
               >
                 Have a project in mind or just want to say hello? I'd love to hear from you.
               </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="text-primary font-medium mt-3"
+              >
+                I am available for freelance and full-time roles.
+              </motion.p>
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-start">
