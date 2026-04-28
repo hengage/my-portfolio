@@ -103,13 +103,25 @@ export default function ProjectsSection() {
                 </div>
                 <h3 className="text-xl font-medium mb-2">{project.title}</h3>
                 <p className="text-muted-foreground mb-4">{project.description}</p>
-                <Link 
-                  to={project.link} 
-                  className="inline-flex items-center gap-2 text-primary hover:underline"
-                >
-                  View Project
-                  <ArrowUpRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                </Link>
+                {project.link.startsWith("http") ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 text-primary hover:underline"
+                  >
+                    Visit Site
+                    <ArrowUpRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  </a>
+                ) : (
+                  <Link
+                    to={project.link}
+                    className="inline-flex items-center gap-2 text-primary hover:underline"
+                  >
+                    View Project
+                    <ArrowUpRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  </Link>
+                )}
               </div>
             </motion.div>
           ))}
