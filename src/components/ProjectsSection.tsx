@@ -21,14 +21,6 @@ const PROJECTS = [
     technologies: ["React", "Node.js", "Tailwind CSS"],
     image: "https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     link: "https://kanemcare.org"
-  },
-  {
-    id: 3,
-    title: "Real-time Rider Tracking",
-    description: "Geospatial WebSocket-based rider tracking with proximity-based matching for an on-demand delivery platform.",
-    technologies: ["Node.js", "WebSockets", "Redis", "PostgreSQL"],
-    image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    link: "/projects"
   }
 ];
 

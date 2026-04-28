@@ -24,42 +24,6 @@ const PROJECTS = [
     image: "https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     link: "https://kanemcare.org",
   },
-  {
-    id: 3,
-    title: "Modular File Management Service",
-    description:
-      "Redesigned a monolithic file management system at Carrotsuite into a modular, entity-agnostic service — eliminating schema sprawl, enabling concurrent multi-file uploads, instant file access, and reducing feature integration time by ~80% with full backward compatibility.",
-    technologies: ["TypeScript", "Node.js", "PostgreSQL", "Repository Pattern"],
-    image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    link: "#",
-  },
-  {
-    id: 4,
-    title: "Real-time Rider Tracking (Mr Delivery)",
-    description:
-      "Architected a geospatial solution for real-time rider location tracking using WebSockets, paired with a proximity-based search algorithm for matching customers to available riders across Ghana — backed by composite indexes for fast geospatial queries.",
-    technologies: ["Node.js", "WebSockets", "Redis", "PostgreSQL"],
-    image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    link: "#",
-  },
-  {
-    id: 5,
-    title: "Wallet Microservice (PursCliq)",
-    description:
-      "Built and maintained a user wallet microservice with RabbitMQ-based event messaging — enforcing database transactions on every balance mutation, applying idempotency keys to prevent double-processing, and using targeted indexing to keep performance predictable at scale.",
-    technologies: ["Node.js", "RabbitMQ", "PostgreSQL", "Microservices"],
-    image: "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    link: "#",
-  },
-  {
-    id: 6,
-    title: "Product Authentication on AWS Serverless (EnsuredNg)",
-    description:
-      "Built a barcode/QR code scanning pipeline linking physical product seals to authenticated product records on AWS Lambda + DynamoDB + S3 — enabling real-time product verification at scale with structured CloudWatch observability.",
-    technologies: ["AWS Lambda", "DynamoDB", "S3", "CloudWatch", "TypeScript"],
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    link: "#",
-  },
 ];
 
 const Projects = () => {
